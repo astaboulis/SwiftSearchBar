@@ -18,14 +18,18 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search List" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOC-HG-DJd">
-                                    <rect key="frame" x="8" y="8" width="388" height="34"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search List" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOC-HG-DJd">
+                                    <rect key="frame" x="8" y="8" width="368" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="HOC-HG-DJd" secondAttribute="trailing" constant="38" id="ObQ-WO-V2Y"/>
+                                <constraint firstItem="HOC-HG-DJd" firstAttribute="leading" secondItem="6ag-vu-H2a" secondAttribute="leadingMargin" id="o1i-cF-W8a"/>
+                                <constraint firstItem="HOC-HG-DJd" firstAttribute="top" secondItem="6ag-vu-H2a" secondAttribute="topMargin" id="pKp-oZ-dq7"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="fot-Dr-i10">
