@@ -20,9 +20,9 @@ class ViewController: UITableViewController {
         }
         else{
             self.filtered = self.names
-            DispatchQueue.main.async {
-                  self.tableView.reloadData()
-            }
+            
+            self.tableView.reloadData()
+          
           
         }
     }
