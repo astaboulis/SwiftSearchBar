@@ -1,0 +1,6 @@
+framework module Pods_SwiftSearchBar_SwiftSearchBarUITests {
+  umbrella header "Pods-SwiftSearchBar-SwiftSearchBarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
