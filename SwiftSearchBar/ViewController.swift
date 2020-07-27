@@ -9,7 +9,7 @@
 import UIKit
 class ViewController: UITableViewController {
     let names = ["Angelos", "Theodoros", "George","Angeliki","Theodora"]
-    var filtered:[String]=[]
+    var filtered=[String]()
     @IBOutlet var search: UITextField!
     @objc func textFieldEditing(sender:UITextField){
         self.filtered = self.names.filter({ (event) -> Bool in
@@ -20,7 +20,10 @@ class ViewController: UITableViewController {
         }
         else{
             self.filtered = self.names
-            self.tableView.reloadData()
+            DispatchQueue.main.async {
+                  self.tableView.reloadData()
+            }
+          
         }
     }
     override func viewDidLoad() {
